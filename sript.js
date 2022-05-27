@@ -19,8 +19,38 @@ const applyColor = document.querySelector('#applyColor');
 applyColor.addEventListener('click', chooseColor);
 
 //-------------------------------------------------------------------------------------------
+// norima nuotrauka paimama is html doko su onclick
+// centrine nuotrauka prilyginama bigPic kintamajam
+// nuotrauku saltiniai yra sukeiciami
+function changePic(img) {
+    let bigPic = document.querySelector('#bigPic')
+    bigPic.src = img.src;
+}
 
-// 1. doubleclick ant nuotraukos
-// 2. parenkamas paspaustas paveikslelis
-// 3. parinktas paveikslelis rodomas centriniame lange 750x375
+//--------------------------------------------------------------------------------------------
+
+function selectPicture(img) {
+    if (img.style.border == '') {
+        img.style.border = '5px solid gold';
+    } else {
+        img.style.border = '';
+    }
+}
+
+function changePictureParameters() {
+    let newHeight = Number(document.querySelector('#newHeight').value);
+    let newWidth = Number(document.querySelector('#newWidth').value);
+    let images = document.querySelectorAll('.smallPic');
+
+    for (i = 0; i < images.length; i++) {
+        if (images[i].style.border == '5px solid gold') {
+            images[i].style.height = newHeight + 'px';
+            images[i].style.width = newWidth + 'px';
+        }
+    }
+
+}
+
+
+
 

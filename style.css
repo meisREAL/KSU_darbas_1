@@ -91,3 +91,8 @@ input {
 .toolTip .toolTipText {
     visibility: hidden;
 }
+
+.smallPic {
+    width: 200px;
+    height: 100px;
+}

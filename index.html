@@ -20,21 +20,25 @@
             <div class="content">
                 <div class="top">
                     <img src="https://images.unsplash.com/photo-1649302161055-e8a6b307b134?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475"
-                        width="200px" height="100px" title="aprasymas">
+                        width="200px" height="100px" class="smallPic" ondblclick="changePic(this)"
+                        onclick="selectPicture(this)">
 
                     <img src="https://images.unsplash.com/photo-1648996757972-918f03837d0d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1498"
-                        width="200px" height="100px">
+                        width="200px" height="100px" class="smallPic" ondblclick="changePic(this)"
+                        onclick="selectPicture(this)">
 
                     <img src="https://images.unsplash.com/photo-1648614009917-84831416abb6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074"
-                        width="200px" height="100px">
+                        width="200px" height="100px" class="smallPic" ondblclick="changePic(this)"
+                        onclick="selectPicture(this)">
 
                     <img src="https://images.unsplash.com/photo-1637720361854-7f7c7ad3c85e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074"
-                        width="200px" height="100px">
+                        width="200px" height="100px" class="smallPic" ondblclick="changePic(this)"
+                        onclick="selectPicture(this) ">
                 </div>
                 <div class="bot">
                     <div class="botPic">
                         <img src="https://images.unsplash.com/photo-1649302161055-e8a6b307b134?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475"
-                            width="750px" height="375px">
+                            width="750px" height="375px" id="bigPic">
                     </div>
                     <div class="botRight">
                         <label for="info">Paveikslo aprasymas</label> <br>
@@ -55,8 +59,9 @@
             </div>
             <div id="right2">
                 <h5>Paveikslu galerijoje parametrai</h5>
-                <label for="inputWidth">Plotis</label><input type="text" name="inputWidth" id=""> <br>
-                <label for="inputHeight">Aukstis</label><input type="text" name="inputHeight" id="">
+                <label for="inputWidth">Plotis</label><input type="text" name="inputWidth" id="newWidth"> <br>
+                <label for="inputHeight">Aukstis</label><input type="text" name="inputHeight" id="newHeight"> <br>
+                <button id="applyPicParameters" onclick="changePictureParameters()">Pritaikyti</button>
                 <hr>
             </div>
             <div id="right3">
