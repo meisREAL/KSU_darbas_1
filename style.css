@@ -20,6 +20,8 @@ header {
 .top {
     border: 1px solid gray;
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .top img {
@@ -83,16 +85,26 @@ input {
     margin: 10px;
 }
 
-.toolTip {
-    position: relative;
-    display: inline-block;
-}
-
-.toolTip .toolTipText {
-    visibility: hidden;
-}
-
 .smallPic {
     width: 200px;
     height: 100px;
+}
+
+.info {
+    visibility: hidden;
+    font-size: 1px;
+}
+
+
+
+.block:hover {
+    font-size: 28px;
+    color: red;
+    text-align: center;
+
+}
+
+.block:hover .info {
+    visibility: visible;
+    font-size: 28px;
 }

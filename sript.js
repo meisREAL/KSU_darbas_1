@@ -51,6 +51,21 @@ function changePictureParameters() {
 
 }
 
+//-----------------------------------------------------------------------------------------------
 
+function showDescription() {
+    let showDescriptionCheck = document.querySelector('#showDescriptionCheck').checked;
+    // if (showDescriptionCheck == true) {
+    //     document.querySelector('.second').classList.add('block');
+    // }
 
+    let descriptions = document.querySelectorAll('.second')
+    for (i = 0; i < descriptions.length; i++) {
+        if (showDescriptionCheck == true) {
+            descriptions[i].classList.add('block')
+        } else if (showDescriptionCheck == false) {
+            descriptions[i].classList.remove('block');
+        }
+    }
+}
 
